@@ -4,297 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        h1 {
-            text-align: center;
-        }
-
-        .form {
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-        .Kolom {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 10px;
-        }
-        label{
-            margin-bottom: 5px;
-        }
-        .box{
-            display: flex;
-            flex-direction: column;
-            width: 50rem;
-            margin: auto;
-        }
-        button{
-            background-color: blue;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            color: white;
-        }
-        table thead tr th{
-            vertical-align: middle;
-            text-align: center;
-        }
-        .box-box3 {
-            display: flex;
-        }
-
-        .box3 {
-            width: 300px;
-            height: 300px;
-            margin-left:10px ;
-            margin-bottom: 10px;
-        }
-
-        .box3 img {
-            object-fit: cover;
-            width: 300px;
-            height: 300px;
-            
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5b31b49c9.js" crossorigin="anonymous"></script>
+    <title>Index | Muhammad Hafidz Nur Rachman</title>
 </head>
 
-<body>
-    <div class="wrapper">
-        <h1>Pendaftaran Mahasiswa Baru</h1>
-    </div>
-    <div class="box">
-        <form action="" class="form">
-            <div class="Kolom">
-                <label for="npm">NPM (Nomor Pokok Mahasiswa)</label>
-                <input class="form-control" name="npm" id="npm">
-            </div>
-            <div class="Kolom">
-                <label for="nama">Nama Lengkap</label>
-                <input class="form-control" type="text" name="nama" id="nama">
-            </div>
-            <div class="Kolom">
-                <label for="alamt">Alamat</label>
-                <textarea class="form-control" name="alamat" id="alamat" rows="3"></textarea>
-            </div>
-            <div class="kolom">
-                <label for="Jeniskelamin">Jenis Kelamin</label>
-                <div class="kolom">
-                    <input class="form-check-input" type="radio" name="kelamin"> Laki Laki
-                </div>
+<body class="bg-dark">
+    <div class="wrapper w-100 px-5">
+        <nav class="py-3 px-5 position-absolute start-0 w-100" style="z-index: 999;">
+            <div class="d-flex justify-content-between">
                 <div>
-                    <input class="form-check-input" type="radio" name="kelamin"> Perempuan
+                    <h1>MATA KULIAH PBW</h1>
+                </div>
+                <div class="menu h-100 d-flex my-auto gap-5" style="font-size: large;">
+                    <a href="#home">Home</a>
+                    <a href="#praktikum">Praktikum</a>
+                    <a href="#about">About</a>
                 </div>
             </div>
-            <div class="Kolom">
-                <label for="studi"> Program Studi </label>
-                <select class="form-select" name="studi" id="studi" style="padding: 4px;">
-                    <option value="TI">Teknik Informatika</option>
-                    <option value="SI">Sistem Informasi</option>
-                </select>
+            <hr>
+        </nav>
+        <header class="profile py-5 vh-100 d-flex" id="#home">
+            <div class="d-flex flex-column align-items-center gap-5 m-auto">
+                <div class="img-profile">
+                    <img src="gambar/foto.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="text-center" style="font-size: larger;">
+                    Semester 4 Kelas B Informatika
+                    <h1>MUHAMMAD HAFIDZ NUR RACHMAN</h1>
+                    <h4>2110631170029</h4>
+                    <br>
+                    <a href="https://github.com/MHafidz833/Praktikum.git">
+                        <button class="btn btn-primary">Open Repository</button>
+                    </a>
+                </div>
             </div>
-            <div>
-                <button type="submit">Tambah</button>
+        </header>
+        <hr>
+        <main class="d-flex flex-column gap-5 my-5" id="praktikum">
+            
+            <div class="content w-100">
+                <div class="mb-3">
+                    <h3>Praktikum 2</h3>
+                </div>
+                <div class="kontent d-flex gap-3">
+                    <a href="form.html">
+                        <div class="card text-dark">
+                            <div class="img-card" style="overflow: hidden;">
+                                <img src="gambar/Form.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="m-3">
+                                <h5 class="text-dark">Latihan 1 : Form</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="img.html">
+                        <div class="card text-dark">
+                            <div class="img-card" style="overflow: hidden;">
+                                <img src="gambar/fotoweb.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="m-3">
+                                <h5 class="text-dark">Latihan 2 : Layout</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="tabel.html">
+                        <div class="card text-dark">
+                            <div class="img-card" style="overflow: hidden;">
+                                <img src="gambar/tabel.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="m-3">
+                                <h5 class="text-dark">Latihan 3 : Tabel</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </form>
+        </main>
+        <footer id="about">
+            <hr>
+            <div class="d-flex gap-5 justify-content-between flex-wrap">
+                <div class="abouts d-flex flex-column gap-4">
+                    <div>
+                        <h3>Apa Itu Website</h3>
+                        <p>
+                            Website adalah halaman informasi yanng disediakan melalui jalur internet sehingga bisa diakses diseluruh dunia selama terkoneksi dengan jaringan internet. Website juga merupakan komponen atau kumpulan komponen yang terdiri dari teks, gambar, suara, dan animasi sehingga menarik untuk di kunjungi.
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <div>
+                            <img src="gambar/fasilkom.png" alt="" style="width: 100px; height:auto;">
+                        </div>
+                        <div class="my-auto mx-3">
+                            <h1>Fakultas Ilmu Komputer  Teknik Informatika</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h3>Tentang Aku</h3>
+                    <div class="d-flex gap-4 justify-content-center">
+                        <a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color:#0d6efd;"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #0d6efd;"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #00ff55;"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord fa-2xl" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 mb-3 text-center">
+                @Copyright 2023
+            </div>
+        </footer>
     </div>
-    <div class="wrapper">
-        <h1 class="text-center mb-5">Tabel Nilai Mahasiswa</h1>
-        <div class="mx-5">
-            <table class="table table-success table-striped">
-                <thead>
-                    <tr>
-                        <th rowspan="2">NPM</th>
-                        <th rowspan="2">Nama Lengkap</th>
-                        <th colspan="10">Absen</th>
-                        <th colspan="10">Tugas</th>
-                        <th rowspan="2">UTS</th>
-                        <th rowspan="2">UAS</th>
-                    </tr>
-                    <tr>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                        <th>7</th>
-                        <th>8</th>
-                        <th>9</th>
-                        <th>10</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                        <th>7</th>
-                        <th>8</th>
-                        <th>9</th>
-                        <th>10</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>192061001</td>
-                        <td>Rina Kumala Sari</td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>90</center></td>
-                        <td><center>85</center></td>
-                        <td><center>70</center></td>
-                        <td><center>95</center></td>
-                        <td><center>88</center></td>
-                        <td><center>76</center></td>
-                        <td><center>95</center></td>
-                        <td><center>97</center></td>
-                        <td><center>80</center></td>
-                        <td><center>88</center></td>
-                        <td><center>85</center></td>
-                        <td><center>90</center></td>
-                    </tr>
-                    <tr>
-                        <td>192061002</td>
-                        <td>Kevin Mulyana</td>
-                        <td><center>H</center></td>
-                        <td><center>A</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>A</center></td>
-                        <td><center>A</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>80</center></td>
-                        <td><center>95</center></td>
-                        <td><center>90</center></td>
-                        <td><center>85</center></td>
-                        <td><center>98</center></td>
-                        <td><center>96</center></td>
-                        <td><center>75</center></td>
-                        <td><center>87</center></td>
-                        <td><center>70</center></td>
-                        <td><center>78</center></td>
-                        <td><center>95</center></td>
-                        <td><center>90</center></td>
-                    </tr>
-                    <tr>
-                        <td>192061003</td>
-                        <td>Lastri Handayani</td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>90</center></td>
-                        <td><center>85</center></td>
-                        <td><center>70</center></td>
-                        <td><center>95</center></td>
-                        <td><center>88</center></td>
-                        <td><center>76</center></td>
-                        <td><center>95</center></td>
-                        <td><center>97</center></td>
-                        <td><center>80</center></td>
-                        <td><center>88</center></td>
-                        <td><center>85</center></td>
-                        <td><center>90</center></td>
-                    </tr>
-                    <tr>
-                        <td>192061004</td>
-                        <td>Doni Sanjaya</td>
-                        <td><center>H</center></td>
-                        <td><center>A</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>A</center></td>
-                        <td><center>A</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>80</center></td>
-                        <td><center>95</center></td>
-                        <td><center>90</center></td>
-                        <td><center>85</center></td>
-                        <td><center>98</center></td>
-                        <td><center>96</center></td>
-                        <td><center>75</center></td>
-                        <td><center>87</center></td>
-                        <td><center>70</center></td>
-                        <td><center>78</center></td>
-                        <td><center>95</center></td>
-                        <td><center>90</center></td>
-                    </tr>
-                    <tr>
-                        <td>192061005</td>
-                        <td>Rina Kumala Sari</td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>H</center></td>
-                        <td><center>90</center></td>
-                        <td><center>85</center></td>
-                        <td><center>70</center></td>
-                        <td><center>95</center></td>
-                        <td><center>88</center></td>
-                        <td><center>76</center></td>
-                        <td><center>95</center></td>
-                        <td><center>97</center></td>
-                        <td><center>80</center></td>
-                        <td><center>88</center></td>
-                        <td><center>85</center></td>
-                        <td><center>90</center></td>
-                    </tr>
-</tbody>
-</table>
-<div class="box-box3">
-    <div class="box3">
-        <img src="../gambar/foto.jpg" alt="">
-    </div>
-    <div class="box3">
-        <img src="../gambar/foto.jpg" alt="">
-    </div>
-    <div class="box3">
-        <img src="../gambar/foto.jpg" alt="">
-    </div>
-</div>
-<div class="box-box3">
-    <div class="box3">
-        <img src="../gambar/foto.jpg" alt="">
-    </div>
-    <div class="box3">
-        <img src="../gambar/foto.jpg" alt="">
-    </div>
-    <div class="box3">
-        <img src="../gambar/foto.jpg" alt="">
-    </div>
-</div>  
 </body>
 </html>
