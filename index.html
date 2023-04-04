@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        .form {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .Kolom {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        label{
+            margin-bottom: 5px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 50rem;
+            margin: auto;
+        }
+        button{
+            background-color: blue;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+        table thead tr th{
+            vertical-align: middle;
+            text-align: center;
+        }
+        .box-box3 {
+            display: flex;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            margin-left:10px ;
+            margin-bottom: 10px;
+        }
+
+        .box3 img {
+            object-fit: cover;
+            width: 300px;
+            height: 300px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Pendaftaran Mahasiswa Baru</h1>
+    </div>
+    <div class="box">
+        <form action="" class="form">
+            <div class="Kolom">
+                <label for="npm">NPM (Nomor Pokok Mahasiswa)</label>
+                <input class="form-control" name="npm" id="npm">
+            </div>
+            <div class="Kolom">
+                <label for="nama">Nama Lengkap</label>
+                <input class="form-control" type="text" name="nama" id="nama">
+            </div>
+            <div class="Kolom">
+                <label for="alamt">Alamat</label>
+                <textarea class="form-control" name="alamat" id="alamat" rows="3"></textarea>
+            </div>
+            <div class="kolom">
+                <label for="Jeniskelamin">Jenis Kelamin</label>
+                <div class="kolom">
+                    <input class="form-check-input" type="radio" name="kelamin"> Laki Laki
+                </div>
+                <div>
+                    <input class="form-check-input" type="radio" name="kelamin"> Perempuan
+                </div>
+            </div>
+            <div class="Kolom">
+                <label for="studi"> Program Studi </label>
+                <select class="form-select" name="studi" id="studi" style="padding: 4px;">
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="SI">Sistem Informasi</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Tambah</button>
+            </div>
+        </form>
+    </div>
+    <div class="wrapper">
+        <h1 class="text-center mb-5">Tabel Nilai Mahasiswa</h1>
+        <div class="mx-5">
+            <table class="table table-success table-striped">
+                <thead>
+                    <tr>
+                        <th rowspan="2">NPM</th>
+                        <th rowspan="2">Nama Lengkap</th>
+                        <th colspan="10">Absen</th>
+                        <th colspan="10">Tugas</th>
+                        <th rowspan="2">UTS</th>
+                        <th rowspan="2">UAS</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>192061001</td>
+                        <td>Rina Kumala Sari</td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>90</center></td>
+                        <td><center>85</center></td>
+                        <td><center>70</center></td>
+                        <td><center>95</center></td>
+                        <td><center>88</center></td>
+                        <td><center>76</center></td>
+                        <td><center>95</center></td>
+                        <td><center>97</center></td>
+                        <td><center>80</center></td>
+                        <td><center>88</center></td>
+                        <td><center>85</center></td>
+                        <td><center>90</center></td>
+                    </tr>
+                    <tr>
+                        <td>192061002</td>
+                        <td>Kevin Mulyana</td>
+                        <td><center>H</center></td>
+                        <td><center>A</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>A</center></td>
+                        <td><center>A</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>80</center></td>
+                        <td><center>95</center></td>
+                        <td><center>90</center></td>
+                        <td><center>85</center></td>
+                        <td><center>98</center></td>
+                        <td><center>96</center></td>
+                        <td><center>75</center></td>
+                        <td><center>87</center></td>
+                        <td><center>70</center></td>
+                        <td><center>78</center></td>
+                        <td><center>95</center></td>
+                        <td><center>90</center></td>
+                    </tr>
+                    <tr>
+                        <td>192061003</td>
+                        <td>Lastri Handayani</td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>90</center></td>
+                        <td><center>85</center></td>
+                        <td><center>70</center></td>
+                        <td><center>95</center></td>
+                        <td><center>88</center></td>
+                        <td><center>76</center></td>
+                        <td><center>95</center></td>
+                        <td><center>97</center></td>
+                        <td><center>80</center></td>
+                        <td><center>88</center></td>
+                        <td><center>85</center></td>
+                        <td><center>90</center></td>
+                    </tr>
+                    <tr>
+                        <td>192061004</td>
+                        <td>Doni Sanjaya</td>
+                        <td><center>H</center></td>
+                        <td><center>A</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>A</center></td>
+                        <td><center>A</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>80</center></td>
+                        <td><center>95</center></td>
+                        <td><center>90</center></td>
+                        <td><center>85</center></td>
+                        <td><center>98</center></td>
+                        <td><center>96</center></td>
+                        <td><center>75</center></td>
+                        <td><center>87</center></td>
+                        <td><center>70</center></td>
+                        <td><center>78</center></td>
+                        <td><center>95</center></td>
+                        <td><center>90</center></td>
+                    </tr>
+                    <tr>
+                        <td>192061005</td>
+                        <td>Rina Kumala Sari</td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>H</center></td>
+                        <td><center>90</center></td>
+                        <td><center>85</center></td>
+                        <td><center>70</center></td>
+                        <td><center>95</center></td>
+                        <td><center>88</center></td>
+                        <td><center>76</center></td>
+                        <td><center>95</center></td>
+                        <td><center>97</center></td>
+                        <td><center>80</center></td>
+                        <td><center>88</center></td>
+                        <td><center>85</center></td>
+                        <td><center>90</center></td>
+                    </tr>
+</tbody>
+</table>
+<div class="box-box3">
+    <div class="box3">
+        <img src="../gambar/foto.jpg" alt="">
+    </div>
+    <div class="box3">
+        <img src="../gambar/foto.jpg" alt="">
+    </div>
+    <div class="box3">
+        <img src="../gambar/foto.jpg" alt="">
+    </div>
+</div>
+<div class="box-box3">
+    <div class="box3">
+        <img src="../gambar/foto.jpg" alt="">
+    </div>
+    <div class="box3">
+        <img src="../gambar/foto.jpg" alt="">
+    </div>
+    <div class="box3">
+        <img src="../gambar/foto.jpg" alt="">
+    </div>
+</div>  
+</body>
+</html>
